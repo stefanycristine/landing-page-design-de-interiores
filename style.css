@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* Tirando as configurações padrões e iniciais do CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(49, 65, 52);
+  color: #BCAAA4;
+}
+
+html {
+  font-family: 'Playfair Display', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: #D7CCC8;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  background-color: rgb(49, 65, 52);
+  padding: 1.5rem 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #BCAAA4;
+}
+
+.logo {
+  font-family: 'Playfair Display', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #BCAAA4;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  color: #D7CCC8;
+  transform: 2ms ease-in;
+  position: relative;
+}
+
+.menu a {
+  position: relative;
+}
+
+
+.menu a:before {
+  content: ' ';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0px;
+  height: 1px;
+  background-color: rgb(189, 110, 57);
+  transition: all 1.5s ease;
+}
+
+.menu a:hover:before {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  background-color: #344a39;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Playfair Display', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #BCAAA4;
+  margin-bottom: 20px;
+}
+
+
+.hero h1 {
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero button:hover {
+  color: rgb(189, 110, 57);
+  border: none;
+  z-index: 1;
+}
+
+.hero button {
+  width: 250px;
+  height: 60px;
+  cursor: pointer;
+  border: 1px solid #BCAAA4;
+  color: #BCAAA4;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: 1.5s;
+}
+
+.hero button:before {
+  content: ' ';
+  border-radius: 20px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 60px;
+  background-color: rgb(61, 61, 61);
+  z-index: -1;
+  transition: width 1s;
+}
+
+.hero button:hover:before {
+  width: 100%;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  max-width: 1120 px;
+  padding: 2rem;
+  margin: auto;
+}
+
+.projects-cabeçalho {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.projects.title {
+  font-family: 'Playfair Display', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #BCAAA4;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.projects-subtitle {
+  font-family: 'Playfair Display', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #BCAAA4;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.projects-card-container {
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.projects-card {
+  background: #344a39;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-basis: 29rem;
+  font-family: 'Playfair Display', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #BCAAA4;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #344a39;
+}
+
+.footer-copy {
+  font-family: 'Playfair Display', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #BCAAA4;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
